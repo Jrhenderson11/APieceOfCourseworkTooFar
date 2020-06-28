@@ -1,6 +1,7 @@
 # APieceOfCourseworkTooFar
 
 Git repo for """Bridging coursework""", bridging as in 
+![alt text](https://github.com/Jrhenderson11/APieceOfCourseworkTooFar/blob/master/images/bridge.jpg "")
 
 https://tutorial.djangogirls.org/en/django_start_project/
 
