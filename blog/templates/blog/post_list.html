@@ -1,38 +1,7 @@
-{% load static %}
+{% extends 'blog/base.html' %}
 
-<!--
-    Theory by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
+{% block content %}
 
-
-<head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-
-    <title>Blogs</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-</head>>
-
-<body class="subpage">
-    <!-- Header -->
-    <header id="header">
-
-        <div class="inner">
-            <a href="index.html" class="logo">My Blogz</a>
-            <nav id="nav">
-                <a href="/admin">Home</a>
-            </nav>
-            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-        </div>
-    </header>
     {% for post in posts %}
         <div class="inner">
             <header class="align-center">
@@ -42,18 +11,4 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-</body>
-
-
-        <!-- Footer -->
-            <footer id="footer">
-                <div class="inner">
-                    <div class="flex">
-                        <div class="copyright">
-                            &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-                        </div>
-                    </div>
-                </div>
-            </footer>
-    </body>
-</html>
+{% endblock %}
