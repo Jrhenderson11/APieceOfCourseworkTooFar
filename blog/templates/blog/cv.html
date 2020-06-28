@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <div class="inner">
+        <header class="align-left">
+            <h2>CV</h2>
+            <p>asda ansdnvadn vansd vnbavdsnb vasnbd </p>
+        </header>
+        <h3>Name</h3>
+        <p>{{ cv.name|linebreaksbr }}</p>
+        
+        <h3>Profile</h3>
+        <
+        <p>
+        {{ cv.profile|linebreaksbr }}
+        </p>
+        >
+
+        <h3>Skills</h3>
+        <p>{{ cv.skills|linebreaksbr }}</p>
+
+        <h3>Education</h3>
+        <p>{{ cv.education|linebreaksbr }}</p>
+    	{% if user.is_authenticated %}
+    	<a class="btn btn-default" href="{% url 'cv_edit' %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    	{% endif %}
+    </div>
+
+{% endblock %}
