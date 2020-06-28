@@ -5,6 +5,12 @@ __pycache__
 myvenv
 db.sqlite3
 /static
+token
+
+migrations
+
+# Geckodriver logs
+geckodriver.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
